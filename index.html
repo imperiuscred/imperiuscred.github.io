@@ -7,22 +7,29 @@
 <link rel="stylesheet" href="https://cloudflare.com">
 <style>
 :root{--navy:#0A1628;--gold:#D4AF37;--gold-h:#B8941F;--muted:#94A3B8;--bg:#F1F5F9}
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;scroll-behavior:smooth}
 body{background:var(--bg);color:#1E293B}
-.top{background:#060E1A;color:var(--muted);font-size:13px;padding:8px 5%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-bottom:1px solid rgba(212,175,55,.2)}
+.top{background:#060E1A;color:var(--muted);font-size:13px;padding:8px 4%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-bottom:1px solid rgba(212,175,55,.2)}
 .top i{color:var(--gold);margin-right:4px}.top a{color:#fff;text-decoration:none;margin-left:15px}
-header{background:var(--navy);padding:16px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 4px 20px rgba(0,0,0,.3)}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-.logo-i{background:var(--gold);color:var(--navy);width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:19px}
-.logo h1{font-family:'Cinzel',serif;color:#fff;font-size:19px}.logo span{color:var(--gold);font-size:10px;letter-spacing:2px;display:block;text-transform:uppercase}
-nav{display:flex;align-items:center;gap:22px}nav a{color:#E2E8F0;text-decoration:none;font-size:14px}nav a:hover{color:var(--gold)}
-.btn-g{background:var(--gold);color:var(--navy);padding:10px 20px;border-radius:6px;font-weight:700;text-decoration:none;font-size:14px;border:none;cursor:pointer}.btn-g:hover{background:var(--gold-h)}
+header{background:var(--navy);padding:14px 4%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 4px 20px rgba(0,0,0,.3);gap:15px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.logo-i{background:var(--gold);color:var(--navy);width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.logo h1{font-family:'Cinzel',serif;color:#fff;font-size:18px;line-height:1.1}.logo span{color:var(--gold);font-size:9px;letter-spacing:2px;display:block;text-transform:uppercase}
+nav{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:flex-end}
+nav a{color:#E2E8F0;text-decoration:none;font-size:13px;font-weight:500;transition:.2s;white-space:nowrap}nav a:hover{color:var(--gold)}
+.btn-g{background:var(--gold);color:var(--navy);padding:9px 18px;border-radius:6px;font-weight:700;text-decoration:none;font-size:13px;border:none;cursor:pointer;white-space:nowrap}.btn-g:hover{background:var(--gold-h)}
 .hero{background:linear-gradient(135deg,#07101E,#102342);color:#fff;text-align:center;padding:75px 5% 85px}
 .badge{display:inline-block;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.4);color:var(--gold);padding:6px 16px;border-radius:20px;font-size:12px;font-weight:600;margin-bottom:18px;text-transform:uppercase}
 .hero h2{font-family:'Cinzel',serif;font-size:clamp(26px,4vw,44px);max-width:780px;margin:0 auto 18px}
 .hero p{color:var(--muted);max-width:640px;margin:0 auto 30px;font-size:15px;line-height:1.6}
 .h-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
 .btn-o{border:1px solid rgba(255,255,255,.3);color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px;display:flex;align-items:center;gap:8px}.btn-o:hover{border-color:var(--gold);color:var(--gold)}
+.sobre{background:#fff;padding:60px 5%;border-bottom:1px solid #E2E8F0}
+.sobre-box{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;align-items:center}
+.sobre h3{font-size:28px;color:var(--navy);margin:10px 0 14px}
+.sobre p{color:#475569;font-size:15px;line-height:1.6;margin-bottom:12px}
+.pilares{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pilar{background:#F8FAFC;padding:15px;border-radius:10px;border-left:3px solid var(--gold);font-size:13.5px;font-weight:600;color:var(--navy)}
 .sol{padding:65px 5%;max-width:1260px;margin:0 auto}.sec-h{text-align:center;margin-bottom:45px}
 .tag{background:#FEF3C7;color:#92400E;padding:5px 14px;border-radius:15px;font-size:11px;font-weight:700;text-transform:uppercase}
 .sec-h h3{font-size:30px;color:var(--navy);margin:10px 0 8px}.sec-h p{color:#64748B;font-size:15px}
@@ -56,31 +63,50 @@ footer{background:var(--navy);color:var(--muted);text-align:center;padding:35px 
 .bot-ft{padding:10px;background:#fff;border-top:1px solid #E2E8F0;display:flex;gap:8px}
 .bot-ft input{flex:1;padding:9px;border:1px solid #CBD5E1;border-radius:8px;font-size:13px;outline:none}
 .bot-ft button{background:var(--gold);color:var(--navy);border:none;padding:0 14px;border-radius:8px;font-weight:700;cursor:pointer}
-@media(max-width:768px){nav a{display:none}}
+@media(max-width:980px){nav a{display:none}}
 </style>
 </head>
 <body>
 <div class="top">
-<div><span><i class="fas fa-check"></i>Agilidade</span> &nbsp;<span><i class="fas fa-check"></i>Segurança</span> &nbsp;<span><i class="fas fa-check"></i>Melhores condições</span></div>
+<div><span><i class="fas fa-check"></i>Agilidade</span> &nbsp;<span><i class="fas fa-check"></i>Segurança</span> &nbsp;<span><i class="fas fa-check"></i>As melhores condições</span></div>
 <div><a href="tel:5137850149"><i class="fas fa-phone-alt"></i>(51) 3785-0149</a><a href="https://wa.me" target="_blank"><i class="fab fa-whatsapp" style="color:#25D366"></i>(51) 98479-9152</a></div>
 </div>
 <header>
-<a href="#" class="logo"><div class="logo-i"><i class="fas fa-crown"></i></div><div><h1>IMPERIUS CRED</h1><span>Consultoria Financeira</span></div></a>
-<nav><a href="#inicio">Início</a><a href="#solucoes">Soluções Financeiras</a><button class="btn-g" onclick="abrir('Simulação Geral')">Simular Agora</button></nav>
+<a href="#inicio" class="logo"><div class="logo-i"><i class="fas fa-crown"></i></div><div><h1>IMPERIUS CRED</h1><span>Consultoria Financeira</span></div></a>
+<nav>
+<a href="#inicio">Início</a>
+<a href="#sobre">Sobre Nós</a>
+<a href="#solucoes">Serviços</a>
+<a href="#consignado">Consignado</a>
+<a href="#clt">Crédito CLT</a>
+<a href="#energia">Energia</a>
+<a href="#garantias">Garantias</a>
+<button class="btn-g" onclick="abrir('Simulação Geral')">Simular Agora</button>
+</nav>
 </header>
 <section class="hero" id="inicio">
 <div class="badge"><i class="fas fa-crown"></i> Consultoria Financeira Especializada</div>
 <h2>SEU FUTURO FINANCEIRO EM BOAS MÃOS!</h2>
-<p>Soluções completas de crédito consignado, antecipação de precatórios e economia de energia com agilidade, segurança e as melhores condições.</p>
+<p>Soluções completas de crédito consignado, antecipação de precatórios e economia de energia com agilidade, segurança e as melhores condições do mercado.</p>
 <div class="h-btns">
 <a href="#solucoes" class="btn-g" style="padding:13px 26px">Conhecer Nossas Soluções</a>
 <a href="https://wa.me?text=Olá!%20Vim%20pelo%20site%20da%20Imperius%20Cred." target="_blank" class="btn-o"><i class="fab fa-whatsapp" style="color:#25D366;font-size:18px"></i> Falar com Consultor</a>
 </div>
 </section>
+<section class="sobre" id="sobre">
+<div class="sobre-box">
+<div>
+<span class="tag">Sobre Nós</span>
+<h3>Transparência e Excelência em Crédito</h3>
+<p>Na <strong>Imperius Cred</strong>, conectamos você às melhores linhas de crédito e soluções financeiras do país, com atendimento humanizado e análise rápida sem burocracia.</p>
+<p>Trabalhamos lado a lado com aposentados, pensionistas, servidores públicos, trabalhadores CLT e empresas para garantir tranquilidade financeira.</p>
+</div>
+<div class="pilares">
+<div class="pilar"><i class="fas fa-shield-alt" style="color:#D4AF37"></i> Segurança 100% Garantida</div>
+<div class="pilar"><i class="fas fa-bolt" style="color:#D4AF37"></i> Liberação Ágil</div>
+<div class="pilar"><i class="fas fa-percentage" style="color:#D4AF37"></i> Taxas Competitivas</div>
+<div class="pilar"><i class="fas fa-headset" style="color:#D4AF37"></i> Consultoria Personalizada</div>
+</div>
+</div>
+</section>
 <section class="sol" id="solucoes">
-<div class="sec-h"><span class="tag">Portfólio Completo</span><h3>Soluções Financeiras Imperius Cred</h3><p>Clique na modalidade desejada para simular agora.</p></div>
-<div class="grid">
-<div class="card"><div class="cb c1"><div class="ci"><i class="fas fa-user-check"></i></div><h4>Crédito Consignado</h4></div><div class="cbody"><p>Menores taxas para aposentados, pensionistas INSS e servidores públicos com desconto em folha.</p><div class="clink" onclick="abrir('Crédito Consignado')">Simular Consignado <i class="fas fa-arrow-right"></i></div></div></div>
-<div class="card"><div class="cb c2"><div class="ci"><i class="fas fa-gavel"></i></div><h4>Antecipação de Precatórios</h4></div><div class="cbody"><p>Receba à vista o valor do seu precatório federal, estadual ou municipal sem esperar anos na fila.</p><div class="clink" onclick="abrir('Antecipação de Precatórios')">Simular Precatório <i class="fas fa-arrow-right"></i></div></div></div>
-<div class="card"><div class="cb c3"><div class="ci"><i class="fas fa-briefcase"></i></div><h4>Crédito CLT</h4></div><div class="cbody"><p>Empréstimo rápido e descomplicado para trabalhadores com carteira assinada.</p><div class="clink" onclick="abrir('Crédito CLT')">Simular Crédito CLT <i class="fas fa-arrow-right"></i></div></div></div>
-<div class="card"><div class="cb c4"><div class="ci"><i class="fas fa-bolt"></i></div><h4>CDC Energia</h4></div><div class="cbody"><p>Empréstimo pessoal com cobrança prática direto na sua conta de luz.</p><div class="clink" onclick="abrir('CDC Energia')">Simular CDC Energia <i class="fas fa-arrow-right"></i></div></div></div>
