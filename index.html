@@ -31,7 +31,7 @@ nav>a:hover,.drop-btn:hover{color:var(--gold)}
 .p-btn:hover{background:#F1F5F9;color:var(--navy)}.p-btn.active{background:var(--navy);color:#fff;font-weight:600}
 .hero{background:radial-gradient(circle at top,#132A4E 0%,#07101E 100%);color:#fff;text-align:center;padding:80px 5% 90px}
 .badge{display:inline-flex;align-items:center;gap:6px;background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.35);color:var(--gold);padding:6px 16px;border-radius:20px;font-size:11.5px;font-weight:600;margin-bottom:22px;text-transform:uppercase}
-.hero h2{font-family:'Cinzel',serif;font-size:clamp(28px,4.2vw,48px);max-width:820px;margin:0 auto 20px;line-height:1.18}
+.hero h2{font-family:'Cinzel',serif;font-size:clamp(28px,4.2vw,48px);max-width:820px;margin:0 auto 20px;line-height:1.18;color:var(--gold)}
 .hero p{color:var(--muted);max-width:650px;margin:0 auto 34px;font-size:15.5px;line-height:1.6}
 .h-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
 .btn-o{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.25);color:#fff;padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px;display:flex;align-items:center;gap:8px}.btn-o:hover{border-color:var(--gold);color:var(--gold)}
@@ -80,13 +80,11 @@ nav>a:hover,.drop-btn:hover{color:var(--gold)}
 .pillars-bar{background:var(--navy-d);padding:26px 8%;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
 .pillars-wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}@media(max-width:850px){.pillars-wrap{grid-template-columns:1fr}}
 .pil-item{display:flex;align-items:center;gap:14px}.pil-ico{width:38px;height:38px;border-radius:50%;border:1px solid rgba(212,175,55,.4);color:var(--gold);display:flex;align-items:center;justify-content:center}.pil-item h5{color:#fff;font-size:12.5px;text-transform:uppercase}.pil-item span{color:var(--muted);font-size:12px}
-footer{background:var(--navy-d);color:var(--muted);padding:45px 8% 30px;font-size:13.5px}
-.ft-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:35px;border-bottom:1px solid rgba(255,255,255,.08)}@media(max-width:850px){.ft-grid{grid-template-columns:1fr}}
-.ft-col h4{color:var(--gold);font-size:14px;margin-bottom:14px;text-transform:uppercase}.ft-links{list-style:none;display:flex;flex-direction:column;gap:8px}.ft-links a{color:var(--muted);cursor:pointer}.ft-links a:hover{color:var(--gold)}
-.ft-copy{max-width:1200px;margin:22px auto 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px}
-.bot-btn{position:fixed;bottom:22px;right:22px;background:var(--navy);color:#fff;border:2px solid var(--gold);border-radius:50px;padding:10px 18px 10px 12px;display:flex;align-items:center;gap:10px;cursor:pointer;box-shadow:0 8px 25px rgba(0,0,0,.35);z-index:999}
-.bot-av{width:36px;height:36px;border-radius:50%;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:17px}
-.bot-win{position:fixed;bottom:84px;right:22px;width:340px;max-width:92vw;background:#fff;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.25);border:1px solid #CBD5E1;overflow:hidden;display:none;flex-direction:column;z-index:1000}
+footer{background:var(--navy-d);color:var(--muted);padding:30px 8%;font-size:12.5px;text-align:center}
+.wa-float{position:fixed;bottom:22px;right:22px;width:56px;height:56px;background:#25D366;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.3);z-index:999}
+.bot-btn{position:fixed;bottom:22px;right:88px;background:var(--navy);color:#fff;border:2px solid var(--gold);border-radius:50px;padding:9px 16px 9px 10px;display:flex;align-items:center;gap:9px;cursor:pointer;box-shadow:0 8px 25px rgba(0,0,0,.35);z-index:999}
+.bot-av{width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:16px}
+.bot-win{position:fixed;bottom:86px;right:22px;width:340px;max-width:92vw;background:#fff;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.25);border:1px solid #CBD5E1;overflow:hidden;display:none;flex-direction:column;z-index:1000}
 .bot-hd{background:var(--navy);color:#fff;padding:14px;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--gold)}
 .bot-bd{padding:14px;height:295px;overflow-y:auto;background:#F8FAFC;display:flex;flex-direction:column;gap:9px}
 .mb{background:#fff;border:1px solid #E2E8F0;padding:11px;border-radius:12px 12px 12px 2px;font-size:13.5px}.mu{background:var(--navy);color:#fff;padding:9px 13px;border-radius:12px 12px 2px 12px;font-size:13.5px;align-self:flex-end;max-width:85%}
@@ -101,7 +99,7 @@ footer{background:var(--navy-d);color:var(--muted);padding:45px 8% 30px;font-siz
 <div><a href="tel:5137850149"><i class="fas fa-phone-alt"></i>(51) 3785-0149</a><a href="https://wa.me" target="_blank"><i class="fab fa-whatsapp" style="color:#25D366"></i>(51) 98479-9152</a></div>
 </div>
 <header>
-<div class="logo" onclick="verGeral()"><div class="logo-i"><i class="fas fa-crown"></i></div><div><h1>IMPERIUS CRED</h1><span>Consultoria Financeira</span></div></div>
+<div class="logo" onclick="verGeral()"><div class="logo-i">👑</div><div><h1>IMPERIUS CRED</h1><span>Consultoria Financeira</span></div></div>
 <nav>
 <a onclick="verGeral()">Início</a>
 <div class="dropdown">
@@ -136,7 +134,7 @@ footer{background:var(--navy-d);color:var(--muted);padding:45px 8% 30px;font-siz
 </div>
 <div id="pgGeral">
 <section class="hero">
-<div class="badge"><i class="fas fa-crown"></i> Consultoria Financeira Especializada</div>
+<div class="badge">👑 Consultoria Financeira Especializada</div>
 <h2>SEU FUTURO FINANCEIRO EM BOAS MÃOS!</h2>
 <p>Soluções completas de crédito, financiamento e economia de energia com agilidade, segurança e as melhores condições do mercado.</p>
 <div class="h-btns">
@@ -153,3 +151,103 @@ footer{background:var(--navy-d);color:var(--muted);padding:45px 8% 30px;font-siz
 <div class="card" onclick="verServico('fit')"><div class="cb c-fit"><div class="ci"><i class="fas fa-leaf"></i></div><h4>FIT Energia</h4></div><div class="cbody"><p>Reduza seus gastos mensais com até 25% de desconto na conta de energia.</p><div class="clink">Acessar Página do Serviço <i class="fas fa-arrow-right"></i></div></div></div>
 <div class="card" onclick="verServico('egv')"><div class="cb c-egv"><div class="ci"><i class="fas fa-car"></i></div><h4>EGV – Empréstimo com Garantia de Veículo</h4></div><div class="cbody"><p>Mais crédito e prazos maiores utilizando seu veículo como garantia.</p><div class="clink">Acessar Página do Serviço <i class="fas fa-arrow-right"></i></div></div></div>
 <div class="card" onclick="verServico('fveic')"><div class="cb c-fveic"><div class="ci"><i class="fas fa-truck"></i></div><h4>Financiamento de Veículos</h4></div><div class="cbody"><p>Para carros, motos e veículos pesados, novos ou usados.</p><div class="clink">Acessar Página do Serviço <i class="fas fa-arrow-right"></i></div></div></div>
+<div class="card" onclick="verServico('gimovel')"><div class="cb c-gim"><div class="ci"><i class="fas fa-home"></i></div><h4>Empréstimo com Garantia de Imóvel</h4></div><div class="cbody"><p>Crédito inteligente com excelentes condições usando um imóvel como garantia.</p><div class="clink">Acessar Página do Serviço <i class="fas fa-arrow-right"></i></div></div></div>
+<div class="card" onclick="verServico('fimovel')"><div class="cb c-fim"><div class="ci"><i class="fas fa-building"></i></div><h4>Financiamento Imobiliário</h4></div><div class="cbody"><p>As melhores opções do mercado para conquistar seu imóvel próprio.</p><div class="clink">Acessar Página do Serviço <i class="fas fa-arrow-right"></i></div></div></div>
+<div class="card" onclick="verServico('precatorios')"><div class="cb c-prec"><div class="ci"><i class="fas fa-gavel"></i></div><h4>Antecipação de Precatórios</h4></div><div class="cbody"><p>Receba à vista o valor do seu precatório federal, estadual ou municipal sem esperar.</p><div class="clink">Acessar Página do Serviço <i class="fas fa-arrow-right"></i></div></div></div>
+</div>
+</section>
+</div>
+<div id="pgServico">
+<section class="srv-hero" id="srvBanner">
+<div class="srv-wrap">
+<button class="btn-back" onclick="verGeral()"><i class="fas fa-arrow-left"></i> Voltar para Todas as Soluções</button>
+<div class="srv-hero-box">
+<div>
+<div class="srv-tag">👑 Solução Exclusiva Imperius Cred</div>
+<h2 id="sTitulo">Crédito CLT</h2>
+<p id="sSub">Empréstimo rápido e descomplicado para trabalhadores com carteira assinada.</p>
+<a href="#formRapido" class="btn-g" style="padding:12px 24px;display:inline-flex;align-items:center;gap:8px"><i class="fab fa-whatsapp"></i> Solicitar Cotação Agora</a>
+</div>
+<img id="sImg" class="srv-img" src="" alt="Imagem do Serviço">
+</div>
+</div>
+</section>
+<div class="srv-content" id="formRapido">
+<div class="box-white">
+<h3 id="sComoTitulo">Como funciona?</h3>
+<p id="sComoTexto"></p>
+<h4>Principais Vantagens e Coberturas:</h4>
+<ul class="vant-list" id="sVantagens"></ul>
+<div class="pub-box"><span>Público Indicado</span><p id="sPublico"></p></div>
+</div>
+<div class="box-white box-gold-top">
+<h3>Simulação Rápida</h3>
+<p style="margin-bottom:18px;font-size:13px">Preencha os dados abaixo para enviar direto ao nosso especialista no WhatsApp.</p>
+<div class="form-grp"><label>Seu Nome Completo</label><input type="text" id="fNome" placeholder="Ex: João da Silva"></div>
+<div class="form-grp"><label>WhatsApp para Contato</label><input type="text" id="fFone" placeholder="(51) 99999-9999"></div>
+<div class="form-grp"><label id="lblValor">Valor Desejado (R$)</label><input type="text" id="fValor" placeholder="Ex: R$ 15.000,00"></div>
+<button class="btn-zap" onclick="enviarFormZap()"><i class="fab fa-whatsapp"></i> Enviar Simulação no WhatsApp</button>
+</div>
+</div>
+</div>
+<section class="cta-band">
+<div class="cta-box">
+<div class="cta-txt">
+<span>Mais produtos, mais oportunidades!</span>
+<h3>Fale com a Imperius Cred e descubra a melhor solução para você!</h3>
+<p style="color:#94A3B8;font-size:13.5px;margin-top:8px">Atendimento personalizado com agilidade, transparência e as melhores taxas do mercado.</p>
+</div>
+<div class="cta-cards">
+<a href="tel:5137850149" class="c-call"><i class="fas fa-phone-alt"></i><div><small>Ligue Agora</small><strong>(51) 3785-0149</strong></div></a>
+<a href="https://wa.me?text=Olá!%20Vim%20pelo%20site%20da%20Imperius%20Cred." target="_blank" class="c-wa"><i class="fab fa-whatsapp"></i><div><small>WhatsApp Oficial</small><strong>(51) 98479-9152</strong></div></a>
+</div>
+</div>
+</section>
+<div class="pillars-bar">
+<div class="pillars-wrap">
+<div class="pil-item"><div class="pil-ico"><i class="fas fa-bullseye"></i></div><div><h5>Seu Sonho é o Nosso Foco</h5><span>Planejamento sob medida para seus objetivos</span></div></div>
+<div class="pil-item"><div class="pil-ico"><i class="fas fa-shield-alt"></i></div><div><h5>Confiança em Cada Negociação</h5><span>Transparência total em todas as etapas</span></div></div>
+<div class="pil-item"><div class="pil-ico"><i class="fas fa-chart-line"></i></div><div><h5>Juntos Por Seus Objetivos</h5><span>Acompanhamento completo até a liberação</span></div></div>
+</div>
+</div>
+<footer>© 2026 Imperius Cred – Consultoria Financeira. Todos os direitos reservados.</footer>
+<a href="https://wa.me." target="_blank" class="wa-float"><i class="fab fa-whatsapp"></i></a>
+<div class="bot-btn" onclick="tog()"><div class="bot-av">👑</div><div><div style="font-weight:700;font-size:13.5px;color:#D4AF37">Impéria</div><div style="font-size:10.5px;color:#E2E8F0">Simular Online</div></div></div>
+<div class="bot-win" id="bw">
+<div class="bot-hd"><div style="display:flex;align-items:center;gap:9px"><div class="bot-av" style="width:32px;height:32px;font-size:14px">👑</div><div><h4 style="font-size:14px;color:#D4AF37">Impéria | Imperius Cred</h4><span style="font-size:11px;color:#A7F3D0">● Assistente Virtual Online</span></div></div><button onclick="tog()" style="background:none;border:none;color:#fff;font-size:17px;cursor:pointer">✕</button></div>
+<div class="bot-bd" id="bb">
+<div class="mb">Olá! Bem-vindo(a) à <strong>Imperius Cred</strong> 👑<br>Eu sou a <strong>Impéria</strong>. Qual modalidade deseja simular hoje?</div>
+<div id="opts">
+<button class="opt" onclick="sel('Crédito Consignado')">💰 Simular Crédito Consignado</button>
+<button class="opt" onclick="sel('Antecipação de Precatórios')">⚖️ Antecipação de Precatórios</button>
+<button class="opt" onclick="sel('Portabilidade / Redução')">🔄 Portabilidade / Reduzir Parcela</button>
+<button class="opt" onclick="sel('Outras Soluções')">📋 Outras Modalidades</button>
+</div>
+</div>
+<div class="bot-ft"><input type="text" id="inp" placeholder="Digite seu nome ou dúvida..." onkeypress="if(event.key==='Enter')env()"><button onclick="env()">Enviar</button></div>
+</div>
+<script>
+const dadosSrv={
+clt:{bg:"linear-gradient(135deg,#0B192E,#132A4E)",t:"Crédito CLT",sub:"Empréstimo rápido e descomplicado para trabalhadores com carteira assinada.",img:"https://unsplash.com",como:"Linha de crédito desenvolvida especialmente para profissionais registrados no regime CLT. Com análise ágil e parcelas que cabem no seu orçamento, você conquista o fôlego financeiro que precisa sem burocracia excessiva.",v:["Aprovação ágil com análise simplificada","Parcelas fixas do início ao fim do contrato","Liberação rápida direto na sua conta","Sem necessidade de comprometer bens pessoais"],pub:"Trabalhadores de empresas privadas com registro ativo em Carteira de Trabalho (CTPS).",lbl:"Valor Desejado (R$)",ph:"Ex: R$ 15.000,00"},
+consignado:{bg:"linear-gradient(135deg,#064E3B,#047857)",t:"Crédito Consignado",sub:"As menores taxas do mercado com desconto direto em folha de pagamento.",img:"https://unsplash.com",como:"O Crédito Consignado oferece prazos estendidos e taxas altamente competitivas. Atendemos um amplo portfólio de convênios públicos e previdenciários com total segurança.",v:["Aposentados e Pensionistas do INSS","Servidores Públicos Estaduais (Governos) e Municipais (Prefeituras)","Forças Armadas: Aeronáutica, Marinha e Exército","Servidores Federais (SIAPE) e Previdências Privadas"],pub:"Beneficiários do INSS, militares e servidores públicos federais, estaduais e municipais.",lbl:"Valor Desejado (R$)",ph:"Ex: R$ 15.000,00"},
+cdc:{bg:"linear-gradient(135deg,#92400E,#D97706)",t:"CDC Energia",sub:"Empréstimo pessoal com cobrança prática direto na sua conta de luz.",img:"https://unsplash.com",como:"Precisa de dinheiro rápido e não possui margem consignável ou cartão de crédito? Com o CDC Energia, o valor das parcelas é incluído mensalmente na sua fatura de energia elétrica.",v:["Dispensa comprovação tradicional de renda","Parcelamento acessível direto na fatura de energia","Processo 100% digital e desburocratizado","Liberação rápida após aprovação da concessionária"],pub:"Titulares de conta de energia elétrica residencial que buscam crédito rápido e prático.",lbl:"Valor Desejado (R$)",ph:"Ex: R$ 3.000,00"},
+fit:{bg:"linear-gradient(135deg,#115E59,#0D9488)",t:"FIT Energia",sub:"Reduza seus gastos mensais com até 25% de desconto na conta de energia.",img:"https://unsplash.com",como:"Economize todos os meses na conta de luz sem precisar instalar painéis solares ou fazer obras no telhado. Através da geração compartilhada de energia limpa, você garante até 25% de economia.",v:["Desconto garantido de até 25% na fatura mensal","Zero investimento inicial e zero custo de instalação","Energia limpa e sustentável","Adesão simples sem fidelidade abusiva"],pub:"Residências, comércios e empresas que desejam reduzir custos fixos com energia elétrica.",lbl:"Valor Médio da Conta de Luz (R$)",ph:"Ex: R$ 450,00"},
+egv:{bg:"linear-gradient(135deg,#312E81,#4338CA)",t:"EGV – Empréstimo com Garantia de Veículo",sub:"Mais crédito e prazos maiores utilizando seu veículo como garantia.",img:"https://unsplash.com",como:"Use seu carro quitado como garantia para conseguir valores mais altos e juros muito menores que o empréstimo pessoal comum — e o melhor: você continua usando seu veículo normalmente.",v:["Continue dirigindo seu veículo normalmente","Crédito de até 90% do valor da tabela FIPE","Taxas reduzidas e prazos de até 60 meses","Avaliação rápida e liberação ágil"],pub:"Proprietários de veículos leves que precisam de capital de giro ou crédito pessoal barato.",lbl:"Valor Desejado (R$)",ph:"Ex: R$ 25.000,00"},
+fveic:{bg:"linear-gradient(135deg,#7F1D1D,#B91C1C)",t:"Financiamento de Veículos",sub:"Para carros, motos e veículos pesados, novos ou usados.",img:"https://unsplash.com",como:"Realize a troca ou aquisição do seu próximo veículo com as melhores financeiras do país. Trabalhamos com linhas completas para passeio, motocicletas e frota pesada.",v:["Carros de passeio e utilitários (novos e seminovos)","Motocicletas de baixa e alta cilindrada","Caminhões e veículos pesados para trabalho","Planos flexíveis com entrada facilitada"],pub:"Pessoas físicas e empresas que desejam adquirir veículos novos ou usados.",lbl:"Valor Desejado (R$)",ph:"Ex: R$ 45.000,00"},
+gimovel:{bg:"linear-gradient(135deg,#1E293B,#334155)",t:"Empréstimo com Garantia de Imóvel",sub:"Crédito inteligente com excelentes condições usando um imóvel como garantia.",img:"https://unsplash.com",como:"Transforme o patrimônio do seu imóvel em liquidez imediata para investir no seu negócio, quitar dívidas caras ou realizar grandes projetos, mantendo a posse e o uso do bem.",v:["As menores taxas de juros do sistema financeiro","Prazos estendidos de até 240 meses para pagar","Valores elevados conforme avaliação do imóvel","Aceita imóveis residenciais e comerciais"],pub:"Proprietários de imóveis que buscam crédito de alto valor com parcelas suaves.",lbl:"Valor Desejado (R$)",ph:"Ex: R$ 100.000,00"},
+fimovel:{bg:"linear-gradient(135deg,#4C1D95,#6D28D9)",t:"Financiamento Imobiliário",sub:"As melhores opções do mercado para conquistar seu imóvel próprio.",img:"https://unsplash.com",como:"Assessoria completa do início ao registro em cartório. Comparamos as condições dos principais bancos para garantir que você feche o financiamento imobiliário mais vantajoso.",v:["Imóveis residenciais, comerciais e terrenos","Possibilidade de uso do FGTS na entrada ou amortização","Simulação comparativa entre os principais bancos","Acompanhamento jurídico e documental completo"],pub:"Famílias e investidores que buscam adquirir imóveis novos ou usados.",lbl:"Valor Desejado (R$)",ph:"Ex: R$ 250.000,00"},
+precatorios:{bg:"linear-gradient(135deg,#78350F,#B45309)",t:"Antecipação de Precatórios",sub:"Receba à vista o valor do seu precatório federal, estadual ou municipal sem esperar na fila.",img:"https://unsplash.com",como:"Transforme seu crédito judicial já expedido em recursos imediatos. Realizamos toda a análise documental com total segurança jurídica e transparência.",v:["Pagamento à vista direto na sua conta","Avaliação rápida e 100% gratuita","Segurança jurídica em todas as etapas","Sem mensalidades ou parcelas para pagar"],pub:"Titulares e herdeiros de precatórios federais, estaduais ou municipais já expedidos.",lbl:"Valor Estimado do Precatório (R$)",ph:"Ex: R$ 50.000,00"}
+};
+let srvAtual="Crédito Consignado";
+function verGeral(){document.querySelectorAll('.p-btn').forEach(b=>b.classList.remove('active'));document.getElementById('btn-geral').classList.add('active');document.getElementById('pgGeral').style.display='block';document.getElementById('pgServico').style.display='none';window.scrollTo({top:0,behavior:'smooth'})}
+function verServico(id){const s=dadosSrv[id];srvAtual=s.t;document.querySelectorAll('.p-btn').forEach(b=>b.classList.remove('active'));const btn=document.getElementById('btn-'+id);if(btn)btn.classList.add('active');document.getElementById('srvBanner').style.background=s.bg;document.getElementById('sTitulo').innerText=s.t;document.getElementById('sSub').innerText=s.sub;document.getElementById('sImg').src=s.img;document.getElementById('sComoTitulo').innerText="Como funciona o "+s.t+"?";document.getElementById('sComoTexto').innerText=s.como;document.getElementById('sVantagens').innerHTML=s.v.map(i=>`<li><i class="fas fa-check-circle"></i> ${i}</li>`).join('');document.getElementById('sPublico').innerText=s.pub;document.getElementById('lblValor').innerText=s.lbl;document.getElementById('fValor').placeholder=s.ph;document.getElementById('pgGeral').style.display='none';document.getElementById('pgServico').style.display='block';window.scrollTo({top:0,behavior:'smooth'})}
+function enviarFormZap(){const n=document.getElementById('fNome').value.trim()||"Cliente",f=document.getElementById('fFone').value.trim()||"Não informado",v=document.getElementById('fValor').value.trim()||"A combinar";window.open(`https://wa.me{encodeURIComponent(`Olá! Vim pelo site da Imperius Cred e gostaria de uma cotação.\n*Modalidade:* ${srvAtual}\n*Nome:* ${n}\n*Telefone:* ${f}\n*Valor:* ${v}`)}`,'_blank')}
+let mod="Consignado";
+function tog(){const w=document.getElementById('bw');w.style.display=w.style.display==='flex'?'none':'flex'}
+function abrir(s){document.getElementById('bw').style.display='flex';sel(s)}
+function add(t,c){const b=document.getElementById('bb'),d=document.createElement('div');d.className=c;d.innerHTML=t;b.appendChild(d);b.scrollTop=b.scrollHeight}
+function sel(o){mod=o;const p=document.getElementById('opts');if(p)p.style.display='none';add(o,'mu');setTimeout(()=>add(`Ótimo! Para simular <strong>${o}</strong>, digite abaixo <strong>seu nome e convênio/valor</strong> que já envio para um consultor no WhatsApp:`,'mb'),350)}
+function env(){const i=document.getElementById('inp'),t=i.value.trim();if(!t)return;add(t,'mu');i.value='';setTimeout(()=>{const z=`https://wa.me{encodeURIComponent(`Olá! Falei com a Impéria no site Imperius Cred.\n*Modalidade:* ${mod}\n*Dados:* ${t}`)}`;add(`Perfeito! Clique abaixo para receber sua simulação no WhatsApp:<br><br><a href="${z}" target="_blank" style="display:block;background:#25D366;color:#fff;text-align:center;padding:10px;border-radius:8px;text-decoration:none;font-weight:bold"><i class="fab fa-whatsapp"></i> Receber Simulação no WhatsApp</a>`,'mb')},400)}
+</script>
+</body>
+</html>
